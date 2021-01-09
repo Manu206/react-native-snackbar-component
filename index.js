@@ -43,6 +43,9 @@ class SnackbarComponent extends Component {
           this.props.position === 'top'
             ? { top: this.props.top }
             : { bottom: this.props.bottom },
+          this.props.position === 'relative'
+            ? { position: 'relative' }
+            : { position: 'absolute'},
         ]}
       >
         <Animated.View
